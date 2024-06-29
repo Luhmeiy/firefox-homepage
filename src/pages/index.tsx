@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Pixelify_Sans } from "next/font/google";
 import { LinkContainer } from "@/components/LinkContainer";
 
+import config from "../../next.config.mjs";
+
 const pixelifySans = Pixelify_Sans({
 	subsets: ["latin"],
 });
@@ -68,7 +70,7 @@ export default function Home() {
 			className={`flex flex-col items-center justify-center h-dvh bg-[url("https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-38.gif")] text-white ${pixelifySans.className}`}
 		>
 			<Image
-				src="/firefox.svg"
+				src={`${config.basePath}/firefox.svg`}
 				alt="Firefox logo"
 				width="125"
 				height="125"
