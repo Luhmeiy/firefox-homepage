@@ -59,7 +59,7 @@ jobs:
                   key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
                   restore-keys: ${{ runner.os }}-pnpm-store-
             - name: Install dependencies
-              run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+              run: pnpm install
             - name: Build with Next.js
               run: pnpm run build
             - name: Upload artifact
