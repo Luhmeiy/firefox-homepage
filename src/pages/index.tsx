@@ -17,7 +17,7 @@ export default function Home() {
 
 	return (
 		<main
-			className={`flex flex-col items-center justify-center h-dvh bg-[url("https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-38.gif")] text-white ${pixelifySans.className}`}
+			className={`flex flex-col items-center justify-center h-dvh bg-[url("https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-38.gif")] bg-center bg-cover bg-no-repeat text-white ${pixelifySans.className}`}
 		>
 			<Head>
 				<title>Nova aba</title>
